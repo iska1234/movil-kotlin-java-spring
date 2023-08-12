@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="32dp"
+    android:paddingHorizontal="16dp"
+    android:background="@drawable/fondo1"
+    tools:context=".MenuPrincipal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewM1"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:layout_constraintEnd_toStartOf="@+id/viewM2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@mipmap/malmacen"
+                app:tint="@color/white"
+                android:layout_marginBottom="8dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALMACEN"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewM2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewM1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginEnd="16dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/mcompras"
+                app:tint="@color/white"
+                android:layout_marginBottom="8dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPRAS"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewM4"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:layout_constraintTop_toBottomOf="@+id/viewM1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/viewM5"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@mipmap/mventas"
+                app:tint="@color/white"
+                android:layout_marginBottom="8dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VENTAS"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewM5"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/viewM4"
+        app:layout_constraintTop_toBottomOf="@id/viewM2"
+        android:textAlignment="center"
+        android:layout_marginEnd="16dp"
+        android:animateLayoutChanges="true"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/mentregas"
+                app:tint="@color/white"
+                android:layout_marginBottom="8dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTREGAS"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewM6"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:layout_constraintTop_toBottomOf="@+id/viewM5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/viewM7"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@mipmap/mllamada"
+                app:tint="@color/white"
+                android:layout_marginBottom="8dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ATENCION AL CLIENTE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewM7"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/viewM6"
+        app:layout_constraintTop_toBottomOf="@id/viewM5"
+        android:textAlignment="center"
+        android:layout_marginEnd="16dp"
+        android:animateLayoutChanges="true"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/mmensaje"
+                app:tint="@color/white"
+                android:layout_marginBottom="8dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUGERENCIAS/COMENTARIOS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

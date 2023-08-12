@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    android:orientation="vertical"
+    tools:context=".MantenimientoVentas">
+
+    <TextView
+        android:id="@+id/tvProductoVentas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VENTAS REALIZADAS"
+        android:textAlignment="center"
+        android:textColor="#06135E"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:layout_marginTop="50dp"
+        android:id="@+id/lstventa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animationCache="false"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="8dp"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

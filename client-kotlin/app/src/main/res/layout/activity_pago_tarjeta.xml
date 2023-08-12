@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo1"
+    android:orientation="vertical"
+    tools:context=".PagoTarjetaActivity">
+    <TextView
+        android:id="@+id/tvDatosTarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagar con tarjeta"
+        android:textAlignment="center"
+        android:textColor="#06135E"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@mipmap/card" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilDireccionEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtNumtarjeta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Numero de tarjeta" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@mipmap/calendar" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTemaEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFvtarjeta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Fecha de vencimiento" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@mipmap/passwcard" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCVVtarjeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCVVTarjeta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="CVV"
+                        android:password="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@mipmap/idcard" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTitularTarjeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtTitularTarjeta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre del titular" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnRegistrartarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:text="REGISTRAR PAGO"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>

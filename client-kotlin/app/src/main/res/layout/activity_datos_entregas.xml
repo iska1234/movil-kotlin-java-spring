@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo1"
+    tools:context=".DatosEntregas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Entrega"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/background_component_selected"
+            android:textSize="30sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Id de venta:"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvIdventa"
+                        android:layout_width="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Id de venta:"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/textView9"
+                        android:layout_width="70dp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nombre de producto:" />
+
+                    <TextView
+                        android:id="@+id/tvNombentrega"
+                        android:layout_width="70dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nom Entrega:" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            app:boxBackgroundMode="outline"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:boxCornerRadiusTopEnd="10dp"
+                            app:boxCornerRadiusTopStart="10dp"
+                            app:helperText="Aqui ingrese el precio del producto"
+                            app:helperTextEnabled="true"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="200"
+                            app:endIconMode="clear_text">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtDireccionentrega"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Direccion de entrega"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnAñadirEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background_component_selected"
+            android:text="Registrar nueva entrega"/>
+
+
+    </LinearLayout>
+</FrameLayout>
