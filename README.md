@@ -1,4 +1,4 @@
-# Movil-kotlin-spring
+# Movil-kotlin-java-spring
 Mobile app with kotlin, backend with spring and mysql
 
 # How to start the project
